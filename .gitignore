@@ -1,7 +1,9 @@
 
+.DS_Store
+Algorithm
 CMakeCache.*
 CMakeFiles/*
-Makefile.*
+Makefile
 *.cbp
 cmake-build-debug/*
 cmake_install.cmake

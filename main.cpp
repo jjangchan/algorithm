@@ -1,9 +1,9 @@
 #include <iostream>
-#include "programmers/12899.h"
-#include "example/Lambda_test.h"
+#include "programmers/12899_2.h"
+#include <chrono>
 
 int main()
 {
-    solution(500000000);
+    solution(12501);
     return 0;
 }

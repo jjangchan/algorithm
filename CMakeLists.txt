@@ -12,6 +12,6 @@ set(SRC
         programmers/42587.h
         programmers/42584.h
         programmers/12899.h
-        example/Lambda_test.h)
+        programmers/12899_2.h)
 
 add_executable(${PROJECT_NAME} main.cpp ${SRC})
