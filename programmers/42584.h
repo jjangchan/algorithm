@@ -1,5 +1,6 @@
 //
 // Created by JKC on 17/05/2020.
+// 42584 - 주식가격
 //
 
 #ifndef ALGORITHM_42584_H
