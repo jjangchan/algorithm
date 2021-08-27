@@ -1,0 +1,4 @@
+"C:\Program Files\JetBrains\CLion 2021.1\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Release -G "CodeBlocks - MinGW Makefiles" C:\Users\momantic03\workspace\cpp\algorithm
+-- Configuring done
+-- Generating done
+-- Build files have been written to: C:/Users/momantic03/workspace/cpp/algorithm/cmake-build-release
