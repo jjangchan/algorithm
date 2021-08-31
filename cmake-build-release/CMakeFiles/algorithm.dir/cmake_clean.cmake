@@ -1,5 +1,4 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/algorithm.dir/baekjoon/example.cpp.obj"
   "CMakeFiles/algorithm.dir/main.cpp.obj"
   "algorithm.exe"
   "algorithm.exe.manifest"
