@@ -1,5 +1,5 @@
 //
-// Created by momantic03 on 2021-08-30.
+// Created by jjangchan on 2021-08-25.
 //
 
 #ifndef ALGORITHM_EX3_2021KAKAOBLIND_H
