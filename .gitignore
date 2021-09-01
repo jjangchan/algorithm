@@ -6,6 +6,7 @@ CMakeFiles/*
 Makefile
 *.cbp
 cmake-build-debug/*
+cmake-build-release/*
 cmake_install.cmake
 .idea/*
 
