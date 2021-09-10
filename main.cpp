@@ -4,14 +4,43 @@
 #include <vector>
 #include <map>
 #include <unordered_map>
-#include "programmers/Ex3)2021KakaoBlind.h"
+#include "baekjoon/2667.h"
 
-int main()
-{
-    std::vector<std::string> info = {"java backend junior pizza 150","python frontend senior chicken 210","python frontend senior chicken 150","cpp backend senior pizza 260","java backend junior chicken 80","python backend senior chicken 50"};
-    std::vector<std::string> query = {"java and backend and junior and pizza 100","python and frontend and senior and chicken 200","cpp and - and senior and pizza 250","- and backend and senior and - 150","- and - and - and chicken 100","- and - and - and - 150"};
-    solution(info, query);
+int A[27][27],B[1000],p=0;
+int house(int x, int y){
+    if(A[x][y]==1){
+        A[x][y]=0;
+        B[p]++;
+        for(int i=0; i<4; i++)
+        {
+            int cal_x = x +"0112"[i] - '1';
+            int cal_y = y + "1201"[i] - '1';
+            std::cout << " x = " << x << " , y = " << y << std::endl;
+            std::cout << " cal_x = " << cal_x << " , cal_y = " << cal_y << std::endl;
+            house(cal_x,  cal_y);
+        }
+    }
     return 0;
 }
+int main(){
+    int N;
+    int i,j;
+    scanf("%d",&N);
+    for(i=1; i<=N; i++)
+        for(j=1; j<=N; j++)scanf("%1d",&A[i][j]);
+    for(i=1; i<=N; i++)
+        for(j=1; j<=N; j++)if(A[i][j]==1){
+                house(i,j);
+                p++;
+            }
+    std::sort(B,B+p);
+    printf("%d\n",p);
+    for(i=0; i<p; i++)printf("%d\n",B[i]);
+    return 0;
+}
+
+
+
+
 
 
