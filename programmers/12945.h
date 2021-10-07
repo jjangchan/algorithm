@@ -7,12 +7,25 @@
 #define ALGORITHM_12945_H
 
 #include <string>
+#include <iostream>
 #include <vector>
 
 using namespace std;
 
+int fibonacci(const int n){
+    int a = 0;
+    int b = 1;
+    for(int i = 1; i < n; i++){
+        int temp = a;
+        a = b;
+        b += temp;
+        b %= 1234567;
+    }
+    return b;
+}
+
 int solution(int n) {
-    int answer = 0;
+    int answer = fibonacci(n);
     return answer;
 }
 
