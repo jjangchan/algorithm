@@ -2,6 +2,9 @@ cmake_minimum_required(VERSION 3.15)
 project(algorithm)
 
 set(CMAKE_CXX_STANDARD 17)
+if (WIN32)
+    set(CMAKE_CXX_FLAGS "-fexec-charset=CP949")
+endif()
 
 set(SRC
         example/2.1.2.h
@@ -27,6 +30,7 @@ set(SRC
         programmers/12951.h
         programmers/12949.h
         programmers/12945.h
-        programmers/42576.h)
+        programmers/42576.h
+        programmers/42578.h)
 
 add_executable(${PROJECT_NAME} main.cpp ${SRC})
