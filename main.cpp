@@ -1,18 +1,16 @@
 #include <iostream>
 #include <vector>
-#include "programmers/42578.h"
-
-
-void combination(string src, string crs, int depth) {
-    if (crs.size() == depth) std::cout << crs << std::endl;
-
-    else for (int i = 0; i < src.size(); i++)
-            combination(src.substr(i+1), crs+src[i], depth);
-}
 
 int main(){
-    std::vector<std::vector<std::string>> v = {{"crowmask", "face"}, {"bluesunglasses", "face"}, {"smoky_makeup", "face"}};
-    solution(v);
+    int* arr = new int[3];
+    arr[0] = 1;
+    arr[1] = 2;
+    arr[2] = 3;
+
+    int* new_arr = arr;
+    std::cout << new_arr << std::endl;
+    std::cout << &arr[0] << std::endl;
+
     return 0;
 }
 
