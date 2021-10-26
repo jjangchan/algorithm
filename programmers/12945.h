@@ -7,6 +7,7 @@
 #define ALGORITHM_12945_H
 
 #include <string>
+#include <iostream>
 #include <vector>
 
 using namespace std;
