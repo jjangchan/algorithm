@@ -1,3 +1,9 @@
+//
+// Created by jjangchan on 2021-11-01.
+//
+
+#ifndef MAIN_CPP_4196_H
+#define MAIN_CPP_4196_H
 #include <vector>
 #include <iostream>
 #include <algorithm>
@@ -60,12 +66,14 @@ int main(){
         int result = 0;
         Reset(done, false, N+1);
         for(int i =1; i <= N; i++){
-           if(!done[arr[i]]){
-               result++;
-               done[arr[i]] = true;
-           }
+            if(!done[arr[i]]){
+                result++;
+                done[arr[i]] = true;
+            }
         }
         std::cout << result << std::endl;
     }
     return 0;
 }
+
+#endif //MAIN_CPP_4196_H
