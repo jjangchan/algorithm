@@ -1,3 +1,10 @@
+//
+// Created by jjangchan on 2021/11/01.
+//
+
+#ifndef MAIN_CPP_2231_H
+#define MAIN_CPP_2231_H
+
 #include <vector>
 #include <iostream>
 #include <algorithm>
@@ -20,9 +27,4 @@ int main(){
     std::cout << result << std::endl;
     return 0;
 }
-
-
-
-
-
-
+#endif //MAIN_CPP_2231_H
