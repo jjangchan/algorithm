@@ -1,3 +1,9 @@
+//
+// Created by jjangchan on 2021/11/03.
+//
+
+#ifndef MAIN_CPP_11053_H
+#define MAIN_CPP_11053_H
 #include <algorithm>
 #include <iostream>
 
@@ -15,11 +21,13 @@ int main(){
         dp[i] = 1;
         for(int j = 0; j <= i; j++){
             if(arr[i] > arr[j]) if(dp[i] < dp[j]+1){
-                dp[i] = dp[j] + 1;
-            }
+                    dp[i] = dp[j] + 1;
+                }
             sum = (sum > dp[i]) ? sum : dp[i];
         }
     }
     std::cout << sum;
     return 0;
 }
+
+#endif //MAIN_CPP_11053_H
