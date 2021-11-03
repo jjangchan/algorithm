@@ -34,6 +34,8 @@ set(SRC
         programmers/42578.h
         programmers/12977.h
         baekjoon/1325.h
-        baekjoon/2150.h baekjoon/2231.h)
+        baekjoon/2150.h
+        baekjoon/4196.h
+        baekjoon/11055.h)
 
 add_executable(${PROJECT_NAME} main.cpp ${SRC})
