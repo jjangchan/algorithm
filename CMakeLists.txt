@@ -10,22 +10,10 @@ set(SRC
         example/2.1.2.h
         example/2020.05.14_2.1.3.h
         example/2020.05.14_2.1.4.h
-        example/2020.05.14_2.1.5.h
-        programmers/64061.h
-        programmers/42587.h
-        programmers/42584.h
-        programmers/12899.h
-        programmers/12899_2.h
-        programmers/1829.h
-        baekjoon/1753.h
-        "programmers/Ex1)2021KakaoBlind.h"
-        "programmers/Ex2)2021KakaoBlind.h"
-        "programmers/Ex3)2021KakaoBlind.h"
-        baekjoon/1786.h
-        "programmers/Ex3)2021KakaoBlind2.h"
-        "programmers/Ex1)2021KakaoBlind2.h"
-        "programmers/Ex2)2021KakaoBlind2.h"
-        baekjoon/2667.h
+        example/2020.05.14_2.1.5.h)
+
+
+set(PROGRAMMERS
         programmers/12953.h
         programmers/12951.h
         programmers/12949.h
@@ -33,8 +21,31 @@ set(SRC
         programmers/42576.h
         programmers/42578.h
         programmers/12977.h
+        "programmers/Ex3)2021KakaoBlind2.h"
+        "programmers/Ex1)2021KakaoBlind2.h"
+        "programmers/Ex2)2021KakaoBlind2.h"
+        "programmers/Ex1)2021KakaoBlind.h"
+        "programmers/Ex2)2021KakaoBlind.h"
+        "programmers/Ex3)2021KakaoBlind.h"
+        programmers/64061.h
+        programmers/42587.h
+        programmers/42584.h
+        programmers/12899.h
+        programmers/12899_2.h
+        programmers/1829.h)
+
+set(BAEKJOON
+        baekjoon/1753.h
+        baekjoon/1786.h
+        baekjoon/2667.h
         baekjoon/1325.h
         baekjoon/2150.h
-        baekjoon/4196.h baekjoon/11055.h)
+        baekjoon/4196.h
+        baekjoon/11055.h
+        baekjoon/11053.h
+        baekjoon/2231.h
+        baekjoon/4344.h
+        baekjoon/2667.h
+        )
 
-add_executable(${PROJECT_NAME} main.cpp ${SRC})
+add_executable(${PROJECT_NAME} main.cpp ${SRC} ${BAEKJOON} ${PROGRAMMERS})

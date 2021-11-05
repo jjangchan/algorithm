@@ -1,38 +1,48 @@
-#include <vector>
 #include <iostream>
-#include <thread>
+#include <string>
+#include <cmath>
+#include <bitset>
+#include <vector>
 
-#define MAX 1000
+int N, a, b, size;
+std::vector<int> road;
+std::vector<std::string> sequence;
 
-int arr[MAX], dp[MAX];
-int N;
+std::ostream& operator<<(std::ostream& os, const std::vector<int>& road){
+    return os;
+}
 
-
-std::ostream& operator<<(std::ostream& os, int* dp) {
-    int sum = 0;
-    for(int i = 0; i < N; i++) {
-        dp[i] = arr[i];
-        for (int j = 0; j <= i; j++){
-            if(arr[i] > arr[j]) if(dp[i] < dp[j]+arr[i]){
-                dp[i] = dp[j]+arr[i];
-            }
-            sum = (sum > dp[i]) ? sum : dp[i];
-        }
+std::string ToBinary(int n){
+    std::string s;
+    while(n != 0){
+        s += ( n % 2 == 0 ? "0" : "1" );
+        n /= 2;
     }
-    return os << sum;
+    return s;
 }
 
 void Init(){
     scanf("%d", &N);
-    for(int i = 0; i < N; i++){
-        int num;
-        scanf("%d", &num);
-        arr[i] = num;
+    a = 1;
+    b = N*2;
+    scanf("%d", &size);
+    std::string init;
+    for(int i = 0; i < size; i++){
+        int num1, num2;
+        scanf("%d %d", &num1, &num2);
+        road.push_back(num1+num2);
+        init.push_back('0');
     }
+    sequence.push_back(init);
+    for(int i = std::pow(2, size-1); i < std::pow(2, size); i++){
+        sequence.push_back(ToBinary(i));
+    }
+    for(auto &s : sequence)
+        std::cout << s << std::endl;
+
 }
 
 int main(){
     Init();
-    std::cout << dp;
     return 0;
 }
