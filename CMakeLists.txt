@@ -34,7 +34,12 @@ set(PROGRAMMERS
         programmers/12899_2.h
         programmers/1829.h
         programmers/77484.h
-        programmers/81301.h)
+        programmers/81301.h
+        programmers/67526.h
+        programmers/86051.h
+        programmers/42748.h
+        programmers/76501.h
+        programmers/70128.h programmers/42840.h)
 
 set(BAEKJOON
         baekjoon/1753.h
@@ -48,6 +53,6 @@ set(BAEKJOON
         baekjoon/2231.h
         baekjoon/4344.h
         baekjoon/2667.h
-        baekjoon/2618.h)
+        baekjoon/2618.h programmers/42840.h)
 
 add_executable(${PROJECT_NAME} main.cpp ${SRC} ${BAEKJOON} ${PROGRAMMERS})

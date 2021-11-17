@@ -1,16 +1,9 @@
 #include <iostream>
 #include <string>
-#include "programmers/81301.h"
+#include <vector>
+#include "programmers/42840.h"
 
 int main(){
-    std::string s = "abcd";
-    for(int i = 0; i < 16; i++){
-        std::string str = "";
-        for(int j = 0; j < 4; j++){
-            str += ((i & (1 << j)) ? '-' : s[j]);
-        }
-        std::cout << str << std::endl;
-
-    }
+    solution({1,2,3,4,5});
     return 0;
 }
