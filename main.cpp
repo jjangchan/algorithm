@@ -1,9 +1,5 @@
-#include <iostream>
-#include <string>
-#include <vector>
-#include "programmers/42840.h"
-
+#include "programmers/lv1/12901.h"
 int main(){
-    solution({1,2,3,4,5});
+    solution(5,24);
     return 0;
 }

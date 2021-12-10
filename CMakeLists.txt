@@ -14,32 +14,14 @@ set(SRC
 
 
 set(PROGRAMMERS
-        programmers/12953.h
-        programmers/12951.h
-        programmers/12949.h
-        programmers/12945.h
-        programmers/42576.h
-        programmers/42578.h
-        programmers/12977.h
-        "programmers/Ex3)2021KakaoBlind2.h"
-        "programmers/Ex1)2021KakaoBlind2.h"
-        "programmers/Ex2)2021KakaoBlind2.h"
-        "programmers/Ex1)2021KakaoBlind.h"
-        "programmers/Ex2)2021KakaoBlind.h"
-        "programmers/Ex3)2021KakaoBlind.h"
-        programmers/64061.h
-        programmers/42587.h
-        programmers/42584.h
-        programmers/12899.h
-        programmers/12899_2.h
-        programmers/1829.h
-        programmers/77484.h
-        programmers/81301.h
-        programmers/67526.h
-        programmers/86051.h
-        programmers/42748.h
-        programmers/76501.h
-        programmers/70128.h programmers/42840.h)
+        programmers/12953.h programmers/12951.h
+        programmers/12949.h programmers/12945.h programmers/lv1/42576.h programmers/42578.h programmers/lv1/12977.h "programmers/Ex3)2021KakaoBlind2.h"
+        "programmers/Ex1)2021KakaoBlind2.h" "programmers/Ex2)2021KakaoBlind2.h" "programmers/Ex1)2021KakaoBlind.h" "programmers/Ex2)2021KakaoBlind.h" "programmers/Ex3)2021KakaoBlind.h"
+        programmers/lv1/64061.h programmers/42587.h programmers/42584.h programmers/12899.h
+        programmers/12899_2.h programmers/1829.h programmers/lv1/77484.h programmers/lv1/81301.h programmers/lv1/67526.h
+        programmers/lv1/86051.h programmers/lv1/42748.h programmers/lv1/76501.h programmers/lv1/70128.h programmers/lv1/42840.h
+        programmers/lv1/42862.h programmers/62048.h programmers/lv1/1845.h programmers/42889.h programmers/lv1/77884.h
+        programmers/lv1/68935.h programmers/lv1/12982.h programmers/lv1/68644.h programmers/lv1/12901.h)
 
 set(BAEKJOON
         baekjoon/1753.h
@@ -53,6 +35,6 @@ set(BAEKJOON
         baekjoon/2231.h
         baekjoon/4344.h
         baekjoon/2667.h
-        baekjoon/2618.h programmers/42840.h)
+        baekjoon/2618.h baekjoon/2757.h)
 
 add_executable(${PROJECT_NAME} main.cpp ${SRC} ${BAEKJOON} ${PROGRAMMERS})
