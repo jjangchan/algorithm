@@ -21,7 +21,8 @@ set(PROGRAMMERS
         programmers/12899_2.h programmers/1829.h programmers/lv1/77484.h programmers/lv1/81301.h programmers/lv1/67526.h
         programmers/lv1/86051.h programmers/lv1/42748.h programmers/lv1/76501.h programmers/lv1/70128.h programmers/lv1/42840.h
         programmers/lv1/42862.h programmers/62048.h programmers/lv1/1845.h programmers/42889.h programmers/lv1/77884.h
-        programmers/lv1/68935.h programmers/lv1/12982.h programmers/lv1/68644.h programmers/lv1/12901.h)
+        programmers/lv1/68935.h programmers/lv1/12982.h programmers/lv1/68644.h programmers/lv1/12901.h programmers/lv1/86491.h
+        programmers/lv1/87389.h programmers/lv1/82612.h programmers/lv1/17681.h programmers/lv1/12903.h programmers/lv1/12922.h programmers/lv1/17682.h programmers/lv1/12906.h)
 
 set(BAEKJOON
         baekjoon/1753.h

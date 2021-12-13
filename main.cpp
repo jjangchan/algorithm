@@ -1,5 +1,8 @@
-#include "programmers/lv1/12901.h"
+#include <iostream>
+#include <algorithm>
+#include "programmers/lv1/17682.h"
+
 int main(){
-    solution(5,24);
+    std::unique();
     return 0;
 }
