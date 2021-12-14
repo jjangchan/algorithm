@@ -1,9 +1,18 @@
+//
+// Created by jjangchan on 2021-12-14.
+//
+
+#ifndef MAIN_CPP_12969_H
+#define MAIN_CPP_12969_H
+
 #include <iostream>
+
+using namespace std;
 
 struct Star{
     int x;
     int y;
-    Star(int _x, int _y):x(_x),y(_y){}
+    Star(int _x, int _y):x(_y),y(_y){}
 };
 
 std::ostream& operator<<(std::ostream& os, const Star& s){
@@ -17,9 +26,11 @@ std::ostream& operator<<(std::ostream& os, const Star& s){
 int main(void) {
     int a;
     int b;
-    std::cin >> a >> b;
+    cin >> a >> b;
     Star s(a,b);
 
-    std::cout << s;
+    cout << s;
     return 0;
 }
+
+#endif //MAIN_CPP_12969_H
