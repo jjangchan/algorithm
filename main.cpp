@@ -1,48 +1,57 @@
 #include <iostream>
-#include <string>
-#include <cmath>
-#include <bitset>
 #include <vector>
+int N,W;
 
-int N, a, b, size;
-std::vector<int> road;
-std::vector<std::string> sequence;
+std::pair<int, int>work[1001];
+int dp_table[1001][1001];
 
-std::ostream& operator<<(std::ostream& os, const std::vector<int>& road){
-    return os;
+int dist(std::pair<int, int> a, std::pair<int, int> b){
+    return std::abs(b.first - a.first) + std::abs(b.second - a.second);
 }
 
-std::string ToBinary(int n){
-    std::string s;
-    while(n != 0){
-        s += ( n % 2 == 0 ? "0" : "1" );
-        n /= 2;
-    }
-    return s;
-}
+int dp(int x, int y){
+    std::cout << "( " << x << " , " << y << " )" << std::endl;
+    if(x == W || y == W) return 0;
+    //memoization
+    int &cache = dp_table[x][y];
+    if(cache != -1) return dp_table[x][y];
 
-void Init(){
-    scanf("%d", &N);
-    a = 1;
-    b = N*2;
-    scanf("%d", &size);
-    std::string init;
-    for(int i = 0; i < size; i++){
-        int num1, num2;
-        scanf("%d %d", &num1, &num2);
-        road.push_back(num1+num2);
-        init.push_back('0');
-    }
-    sequence.push_back(init);
-    for(int i = std::pow(2, size-1); i < std::pow(2, size); i++){
-        sequence.push_back(ToBinary(i));
-    }
-    for(auto &s : sequence)
-        std::cout << s << std::endl;
+    int next = std::max(x, y)+1;
+    int distance1, distance2;
 
+    //base
+    // move x
+    distance1 = (x==0) ? dist({1,1}, work[next]) : dist(work[x], work[next]);
+    // move y
+    distance2 = (y == 0) ? dist({N,N}, work[next]) : dist(work[y], work[next]);
+    int t_d1 = dp(next, y) + distance1;
+    int t_d2 = dp(x, next) + distance2;
+    std::cout << "[" << x << ", " << y << "] total distance1 : " << t_d1 << std::endl;
+    std::cout << "[" << x << ", " << y << "] total distance2 : " << t_d2 << std::endl;
+    cache = std::min(t_d1, t_d2);
+    std::cout << "cache : " << cache << std::endl;
+    return cache;
 }
 
 int main(){
-    Init();
+
+    int w;
+
+    w = getchar();
+
+    //w = 12;
+
+    std::cout <<sizeof(w) << "," << (char)w;
+
+    return 0;
+
+    scanf("%d\n%d", &N, &W);
+    for(int i = 1; i <= W; i++) {
+        int first, second;
+        scanf("%d %d",&first,&second);
+        work[i].first = first, work[i].second = second;
+    }
+    memset(dp_table, -1, sizeof(dp_table));
+    std::cout << dp(0,0);
     return 0;
 }
