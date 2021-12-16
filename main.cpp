@@ -1,25 +1,22 @@
 #include <iostream>
+#include <string>
+#include <cmath>
 
-struct Star{
-    int x;
-    int y;
-    Star(int _x, int _y):x(_x),y(_y){}
-};
-
-std::ostream& operator<<(std::ostream& os, const Star& s){
-    for(int i = 0; i < s.y; i++){
-        for(int j = 0; j < s.x; j++) std::cout << "*";
-        std::cout << std::endl;
+std::string rabin_karp(const std::string& str, const std::string& pattern){
+    int patter_length = pattern.length();
+    int str_hash = 0, pattern_hash = 0;
+    for(int i = 0; i < patter_length; i++){
+        str_hash += (str[i]* pow(2, patter_length-1-i);
+        pattern_hash += (pattern[i]* pow(2, patter_length-1-i);
     }
+    int first = str[0]* pow(2, patter_length-1);
 
 }
 
-int main(void) {
-    int a;
-    int b;
-    std::cin >> a >> b;
-    Star s(a,b);
-
-    std::cout << s;
+int main() {
+    std::string str = "avsdasds2ddsavvbsda";
+    std::string patter = "ddsavvb";
+    std::string test = "aaaaa";
+    rabin_karp(str, patter);
     return 0;
 }
