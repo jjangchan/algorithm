@@ -1,4 +1,5 @@
 #include <iostream>
+<<<<<<< HEAD
 #include <string>
 #include <cmath>
 #include <vector>
@@ -40,9 +41,14 @@ std::vector<int> Test1(){
 void Test1(std::vector<int>& v){
     for(int i = 0; i < 100000000; i++) v.push_back(i);
 }
+=======
+#include <vector>
+
+>>>>>>> cbc00725551a3e3cdb8f349d9df9f0c394524e7a
 
 
 int main() {
+<<<<<<< HEAD
     auto start = std::chrono::steady_clock::now();
     std::vector<int> v1 = Test1();
     auto end = std::chrono::steady_clock::now();
@@ -55,5 +61,8 @@ int main() {
     end = std::chrono::steady_clock::now();
     elapsed_time = std::chrono::duration_cast<std::chrono::milliseconds>(end-start).count();
     std::cout << elapsed_time << std::endl;
+=======
+    int n = 3;
+>>>>>>> cbc00725551a3e3cdb8f349d9df9f0c394524e7a
     return 0;
 }

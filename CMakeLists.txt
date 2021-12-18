@@ -32,7 +32,7 @@ set(PROGRAMMERS
         "programmers/Ex3)2021KakaoBlind2.h" "programmers/Ex2)2021KakaoBlind2.h"
         "programmers/lv1/2021kakao_72410" "programmers/Ex2)2021KakaoBlind.h" "programmers/Ex3)2021KakaoBlind.h"
         programmers/lv1/64061.h programmers/42587.h programmers/42584.h programmers/12899.h
-        programmers/12899_2.h programmers/1829.h programmers/lv1/77484.h programmers/lv1/81301.h programmers/lv1/67526.h
+        programmers/12899_2.h programmers/lv2/1829.h programmers/lv1/77484.h programmers/lv1/81301.h programmers/lv1/67526.h
         programmers/lv1/86051.h programmers/lv1/42748.h programmers/lv1/76501.h programmers/lv1/70128.h programmers/lv1/42840.h
         programmers/lv1/42862.h programmers/62048.h programmers/lv1/1845.h programmers/42889.h programmers/lv1/77884.h
         programmers/lv1/68935.h programmers/lv1/12982.h programmers/lv1/68644.h programmers/lv1/12901.h programmers/lv1/86491.h
@@ -41,6 +41,7 @@ set(PROGRAMMERS
         programmers/lv1/12916.h programmers/lv1/12917.h programmers/lv1/12918.h programmers/lv1/12919.h programmers/lv1/12921.h
         programmers/lv1/12925.h programmers/lv1/12926.h programmers/lv1/12928.h programmers/lv1/12930.h programmers/lv1/12969.h
         programmers/lv1/12931.h programmers/lv1/12932.h programmers/lv1/12933.h programmers/lv1/12934.h programmers/lv1/12935.h
-        programmers/lv1/12937.h programmers/lv1/12940.h programmers/lv1/12943.h programmers/lv1/12944.h programmers/lv1/12947.h programmers/lv1/12948.h programmers/lv1/12950.h programmers/lv1/12954.h programmers/lv2/60057.h)
+        programmers/lv1/12937.h programmers/lv1/12940.h programmers/lv1/12943.h programmers/lv1/12944.h programmers/lv1/12947.h
+        programmers/lv1/12948.h programmers/lv1/12950.h programmers/lv1/12954.h programmers/lv2/60057.h programmers/lv2/42888.h)
 
 add_executable(${PROJECT_NAME} main.cpp ${SRC} ${BAEKJOON} ${PROGRAMMERS})
