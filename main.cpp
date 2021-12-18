@@ -1,57 +1,59 @@
 #include <iostream>
+#include <string>
+#include <cmath>
 #include <vector>
-int N,W;
+#include <chrono>
 
-std::pair<int, int>work[1001];
-int dp_table[1001][1001];
-
-int dist(std::pair<int, int> a, std::pair<int, int> b){
-    return std::abs(b.first - a.first) + std::abs(b.second - a.second);
-}
-
-int dp(int x, int y){
-    std::cout << "( " << x << " , " << y << " )" << std::endl;
-    if(x == W || y == W) return 0;
-    //memoization
-    int &cache = dp_table[x][y];
-    if(cache != -1) return dp_table[x][y];
-
-    int next = std::max(x, y)+1;
-    int distance1, distance2;
-
-    //base
-    // move x
-    distance1 = (x==0) ? dist({1,1}, work[next]) : dist(work[x], work[next]);
-    // move y
-    distance2 = (y == 0) ? dist({N,N}, work[next]) : dist(work[y], work[next]);
-    int t_d1 = dp(next, y) + distance1;
-    int t_d2 = dp(x, next) + distance2;
-    std::cout << "[" << x << ", " << y << "] total distance1 : " << t_d1 << std::endl;
-    std::cout << "[" << x << ", " << y << "] total distance2 : " << t_d2 << std::endl;
-    cache = std::min(t_d1, t_d2);
-    std::cout << "cache : " << cache << std::endl;
-    return cache;
-}
-
-int main(){
-
-    int w;
-
-    w = getchar();
-
-    //w = 12;
-
-    std::cout <<sizeof(w) << "," << (char)w;
-
-    return 0;
-
-    scanf("%d\n%d", &N, &W);
-    for(int i = 1; i <= W; i++) {
-        int first, second;
-        scanf("%d %d",&first,&second);
-        work[i].first = first, work[i].second = second;
+int rabin_karp(const std::string& str, const std::string& pattern){
+    int pattern_length = pattern.length();
+    int str_hash = 0, pattern_hash = 0;
+    for(int i = 0; i < pattern_length; i++){
+        str_hash += (str[i]* (int)pow(2, pattern_length-1-i));
+        pattern_hash += (pattern[i]* (int)pow(2, pattern_length-1-i));
     }
-    memset(dp_table, -1, sizeof(dp_table));
-    std::cout << dp(0,0);
+    // start , 시간복잡도 = O(n)
+    for(int i = 0; i <= str.length()-pattern_length; i++){
+        if(str_hash == pattern_hash){
+            // verify
+            bool is = true;
+            for(int j = 0; j < pattern_length; j++){
+                if(pattern[j] != str[i+j]){
+                    is = false;
+                    break;
+                }
+            }
+            if(is) return i;
+        }else if(i != str.length()-pattern_length){
+            int first = str[i]* pow(2, pattern_length-1);
+            str_hash = 2*(str_hash-first)+str[i+pattern_length];
+        }
+    }
+    return -1;
+}
+
+std::vector<int> Test1(){
+    std::vector<int> v;
+    for(int i = 0; i < 100000000; i++) v.push_back(i);
+    return v;
+}
+
+void Test1(std::vector<int>& v){
+    for(int i = 0; i < 100000000; i++) v.push_back(i);
+}
+
+
+int main() {
+    auto start = std::chrono::steady_clock::now();
+    std::vector<int> v1 = Test1();
+    auto end = std::chrono::steady_clock::now();
+    auto elapsed_time = std::chrono::duration_cast<std::chrono::milliseconds>(end-start).count();
+    std::cout << elapsed_time << std::endl;
+
+    start = std::chrono::steady_clock::now();
+    std::vector<int> v2;
+    Test1(v2);
+    end = std::chrono::steady_clock::now();
+    elapsed_time = std::chrono::duration_cast<std::chrono::milliseconds>(end-start).count();
+    std::cout << elapsed_time << std::endl;
     return 0;
 }
