@@ -42,6 +42,7 @@ set(PROGRAMMERS
         programmers/lv1/12925.h programmers/lv1/12926.h programmers/lv1/12928.h programmers/lv1/12930.h programmers/lv1/12969.h
         programmers/lv1/12931.h programmers/lv1/12932.h programmers/lv1/12933.h programmers/lv1/12934.h programmers/lv1/12935.h
         programmers/lv1/12937.h programmers/lv1/12940.h programmers/lv1/12943.h programmers/lv1/12944.h programmers/lv1/12947.h
-        programmers/lv1/12948.h programmers/lv1/12950.h programmers/lv1/12954.h programmers/lv2/60057.h programmers/lv2/42888.h)
+        programmers/lv1/12948.h programmers/lv1/12950.h programmers/lv1/12954.h programmers/lv2/60057.h programmers/lv2/42888.h
+        programmers/lv2/43165.h programmers/lv2/12973.h)
 
 add_executable(${PROJECT_NAME} main.cpp ${SRC} ${BAEKJOON} ${PROGRAMMERS})

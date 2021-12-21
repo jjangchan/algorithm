@@ -1,8 +1,10 @@
 #include <iostream>
-#include <vector>
-
+#include "programmers/lv2/12973.h"
 
 int main() {
-    int n = 3;
+    std::stack<int> s;
+    if(!s.empty())
+        std::cout << s.top() << std::endl;
+    //solution("abba");
     return 0;
 }
