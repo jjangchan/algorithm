@@ -15,16 +15,9 @@ using namespace std;
 int solution(string s)
 {
     std::stack<char> chars;
-    chars.push(s[0]);
-    for(int i = 1; i < s.size(); i++){
-        if(!chars.empty() && chars.top() == s[i]){
-            while(!chars.empty()){
-                if(chars.top() == s[i]){
-                    chars.pop();
-                    i++;
-                }else break;
-            }
-        }else chars.push(s[i]);
+    for(int i = 0; i < s.size(); i++){
+        if(!chars.empty() && chars.top() == s[i]) chars.pop();
+        else chars.push(s[i]);
     }
     return chars.empty() ? 1 : 0;
 }

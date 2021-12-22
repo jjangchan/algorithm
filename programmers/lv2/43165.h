@@ -11,6 +11,26 @@
 
 using namespace std;
 
+/** BIT solution
+int solution(vector<int> numbers, int target) {
+    int answer = 0;
+    int size = 1 << numbers.size();
+
+    for(int i = 0 ; i < size ; i++){
+        int temp = 0;
+        for(int j = 0 ; j < numbers.size() ; j++)
+        {
+            if(i &(1 << j)){
+                temp -= numbers[j];
+            }
+            else temp += numbers[j];
+        }
+        if(temp == target) answer++;
+    }
+    return answer;
+}
+**/
+
 void SearchTarget(const int start, const std::vector<int>& v, const int sum, int& count, const int target){
     if(start == v.size()){
         if(sum == target || sum*-1 == target) count++;
