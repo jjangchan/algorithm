@@ -6,7 +6,7 @@
 #ifndef MAIN_CPP_43165_H
 #define MAIN_CPP_43165_H
 
-#include <string>
+#inclde <string>
 #include <vector>
 
 using namespace std;

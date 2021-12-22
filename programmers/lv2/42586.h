@@ -23,7 +23,6 @@ vector<int> solution(vector<int> progresses, vector<int> speeds) {
         int i_day = ceil(day);
         result_day.push(i_day);
     }
-    std::cout << std::endl;
     int result = result_day.front();
     int count = 1;
     result_day.pop();
