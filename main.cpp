@@ -1,10 +1,7 @@
 #include <iostream>
-#include "programmers/lv2/12973.h"
+#include "programmers/lv2/42586.h"
 
 int main() {
-    std::stack<int> s;
-    if(!s.empty())
-        std::cout << s.top() << std::endl;
-    //solution("abba");
+    solution({2, 2, 1, 2},{1, 1, 1, 1});
     return 0;
 }

@@ -70,5 +70,4 @@ int main(){
     Search(0,0);
     return 0;
 }
-
 #endif //MAIN_CPP_2618_H
