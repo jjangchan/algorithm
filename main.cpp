@@ -1,7 +1,7 @@
 #include <iostream>
-#include "programmers/lv2/42626.h"
+#include "programmers/lv2/77485.h"
 
 int main() {
-    solution({1, 2, 3, 9, 10, 12}, 7);
+    solution(6, 6, {{2, 2, 5, 4}, {3, 3, 6, 6}, {5, 1, 6, 3}});
     return 0;
 }
