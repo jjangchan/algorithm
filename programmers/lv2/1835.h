@@ -11,12 +11,28 @@
 
 using namespace std;
 
-// 전역 변수를 정의할 경우 함수 내에 초기화 코드를 꼭 작성해주세요.
-// 순열 경우의수 적어도 문제
-// 전체! - (여사건) = 답
-// 여사건은 case 별로 나눠보자
+void Combination(bool* is, const std::string& str, const int end, const std::string& temp, int& count){
+    if(temp.size() == end){
+        std::cout << temp << std::endl;
+        count++;
+        return;
+    }
+    for(int i = 0; i < end; i++){
+        if(!is[i]){
+            is[i] = true;
+            Combination(is, str, end, temp+str[i], count);
+            is[i] = false;
+        }
+    }
+}
+
 int solution(int n, vector<string> data) {
     int answer = 0;
+    std::string str = "ABCD";
+    bool is[4] = {false,};
+    int count = 0;
+    Combination(is, str, 4, "", count);
+    std::cout << count;
     return answer;
 }
 
