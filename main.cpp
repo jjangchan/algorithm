@@ -1,7 +1,8 @@
 #include <iostream>
-#include "programmers/lv2/60058.h"
+#include "programmers/lv2/17677.h"
+
 
 int main() {
-    std::cout << solution("(()())()");
+    solution("FRANCE", "french");
     return 0;
 }
