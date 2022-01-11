@@ -1,5 +1,6 @@
 //
 // Created by jjangchan on 2021/12/30.
+// 거리두기 확인하기
 //
 
 #ifndef MAIN_CPP_81302_H

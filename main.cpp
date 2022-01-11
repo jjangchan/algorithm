@@ -1,9 +1,9 @@
 #include <iostream>
 #include <algorithm>
-#include "programmers/lv2/67257.h"
+#include "programmers/lv2/64065.h"
 
 
 int main() {
-    solution("100-200*300-500+20");
+    solution("{{2},{2,1},{2,1,3},{2,1,3,4}}");
     return 0;
 }

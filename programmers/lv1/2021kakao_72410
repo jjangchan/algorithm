@@ -6,6 +6,9 @@
 #ifndef ALGORITHM_EX1_2021KAKAOBLIND_H
 #define ALGORITHM_EX1_2021KAKAOBLIND_H
 
+#include <iostream>
+#include <string>
+
 /** 비트,string(stl) 풀이법
 string solution(string new_id) {
     for (char& ch : new_id) if ('A' <= ch && ch <= 'Z') ch |= 32;
