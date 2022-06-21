@@ -8,6 +8,7 @@
 #include <string>
 #include <vector>
 #include <map>
+#include <iostream>
 
 /** 간결하고 가독성 좋은 풀이
 using namespace std;

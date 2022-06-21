@@ -1,9 +1,11 @@
-#include <iostream>
-#include <algorithm>
-#include "programmers/lv2/64065.h"
-
+#include "datastructure/MySort.h"
 
 int main() {
-    solution("{{2},{2,1},{2,1,3},{2,1,3,4}}");
+    std::vector<int> v = {1,10, 0, 200000, 12,20, 100, 32};
+    merge_sort(v, false);
+
+    for(auto d : v){
+      std::cout << d << " ";
+    }
     return 0;
 }

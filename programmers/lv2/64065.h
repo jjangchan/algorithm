@@ -9,20 +9,20 @@
 #include <string>
 #include <vector>
 #include <iostream>
-#include <unordered_map> // -> 배열도 가능
 #include <algorithm>
 
 using namespace std;
 
 vector<int> solution(string s) {
-    std::unordered_map<int, int> m_answer;
+    int counts[100001] = {0,};
     vector<int> answer;
     for(int i = 0; i < s.size(); i++) if(isdigit(s[i])){
         std::string str;
         while(isdigit(s[i])) str.push_back(s[i++]);
-        m_answer[stoi(str)]++;
+        counts[stoi(str)]++;
     }
-    std::vector<std::pair<int, int>> temp(m_answer.begin(), m_answer.end());
+    std::vector<std::pair<int, int>> temp;
+    for(int i = 1; i <= 100000; i++) if(counts[i]) temp.push_back(make_pair(i, counts[i]));
     std::sort(temp.begin(), temp.end(), [](const pair<int,int>& a, const pair<int,int>& b)->bool{
         if(a.second == b.second) return a.first < b.first;
         return a.second > b.second;
