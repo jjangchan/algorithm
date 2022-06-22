@@ -93,15 +93,15 @@ void merge_sort(std::vector<T> &data, bool asc = true){
 
 template <typename T>
 int get_quick_position(std::vector<T> &data, int begin, int end, int x){
-    int second_pointer = begin;
-    for(int i = begin+1; i < end; i++){
+    int second_pointer = begin-1;
+    for(int i = begin; i < end; i++){
         if(data[i]*x <= data[end]*x){
             T temp = data[i];
-            data[i] = data[second_pointer], data[second_pointer++] = temp;
+            data[i] = data[++second_pointer], data[second_pointer] = temp;
         }
     }
     T temp = data[end];
-    data[end] = data[second_pointer], data[second_pointer] = temp;
+    data[end] = data[++second_pointer], data[second_pointer] = temp;
     return second_pointer;
 }
 
@@ -110,6 +110,10 @@ void quick_sort(std::vector<T>& data, int begin, int end, bool asc = true){
     if(begin < end){
         int x = (asc) ? 1 : -1;
         int position = get_quick_position(data, begin, end, x);
+        std::cout << "(" << position << ") ";
+        for(auto d : data)
+            std::cout << d << " ";
+        std::cout << std::endl;
         quick_sort(data, begin, position-1, asc); // left pivot
         quick_sort(data, position+1, end, asc); // right pivot
     }
