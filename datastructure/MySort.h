@@ -91,6 +91,30 @@ void merge_sort(std::vector<T> &data, bool asc = true){
         data[s_index] = temp[i];
 }
 
+template <typename T>
+int get_quick_position(std::vector<T> &data, int begin, int end, int x){
+    int second_pointer = begin;
+    for(int i = begin+1; i < end; i++){
+        if(data[i]*x <= data[end]*x){
+            T temp = data[i];
+            data[i] = data[second_pointer], data[second_pointer++] = temp;
+        }
+    }
+    T temp = data[end];
+    data[end] = data[second_pointer], data[second_pointer] = temp;
+    return second_pointer;
+}
+
+template <typename T>
+void quick_sort(std::vector<T>& data, int begin, int end, bool asc = true){
+    if(begin < end){
+        int x = (asc) ? 1 : -1;
+        int position = get_quick_position(data, begin, end, x);
+        quick_sort(data, begin, position-1, asc); // left pivot
+        quick_sort(data, position+1, end, asc); // right pivot
+    }
+}
+
 // {3, 1, 5, 2, 10} -> 1st {1, 3, 5, 2, 10}
 
 #endif //MAIN_CPP_MYSORT_H

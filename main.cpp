@@ -1,11 +1,8 @@
 #include "datastructure/MySort.h"
 
 int main() {
-    std::vector<int> v = {1,10, 0, 200000, 12,20, 100, 32};
-    merge_sort(v, false);
-
-    for(auto d : v){
-      std::cout << d << " ";
-    }
+    std::vector<int> v = {8,9, 10, 11,2, 1, 3};
+    quick_sort(v, 0, v.size()-1);
+    for(auto d : v) std::cout << d << " ";
     return 0;
 }
