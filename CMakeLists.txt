@@ -46,7 +46,7 @@ set(PROGRAMMERS
         programmers/lv1/12948.h programmers/lv1/12950.h programmers/lv1/12954.h programmers/lv2/60057.h programmers/lv2/42888.h
         programmers/lv2/43165.h programmers/lv2/12973.h programmers/lv2/42586.h programmers/lv2/42626.h programmers/lv2/77485.h
         programmers/lv2/1835.h programmers/lv2/60058.h programmers/lv2/17677.h programmers/lv2/81302.h programmers/lv2/67257.h
-        programmers/lv2/2021kakao_72412.h programmers/lv2/64065.h )
+        programmers/lv2/2021kakao_72412.h programmers/lv2/64065.h programmers/lv2/86052.h)
 
 set(DataStructure
         datastructure/binarySearch.h
@@ -54,6 +54,8 @@ set(DataStructure
         datastructure/MyHeep.h
         datastructure/MyLinkedList.h
         datastructure/MyQueue.h
-        datastructure/MySort.h)
+        datastructure/MySort.h
+        datastructure/MyHashMap.h
+        datastructure/MyVector.h datastructure/MySet.h)
 
 add_executable(${PROJECT_NAME} main.cpp ${SRC} ${BAEKJOON} ${PROGRAMMERS} ${DataStructure})
