@@ -5,6 +5,10 @@
 #ifndef ALGORITHM_2667_H
 #define ALGORITHM_2667_H
 
+#include <map>
+#include <vector>
+#include <iostream>
+
 std::map<int, std::pair<int, bool>> m;
 std::vector<int> v;
 int n;
