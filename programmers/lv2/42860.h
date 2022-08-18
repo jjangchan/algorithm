@@ -1,3 +1,11 @@
+//
+// Created by jjangchan on 2022/08/17.
+// 조이스틱
+//
+
+#ifndef MAIN_CPP_42860_H
+#define MAIN_CPP_42860_H
+
 #include <vector>
 #include <string>
 #include <iostream>
@@ -20,8 +28,7 @@ int move_count(const int target, const int size, std::string name){
     return count;
 }
 
-int main() {
-    std::string name = "BBBBAAAABA";
+int solution(std::string name) {
     int sum = 0, step = 0;
     for(int i = 0; i < name.size(); i++){
         int up = name[i] -'A';
@@ -36,3 +43,5 @@ int main() {
     }
     return sum+min;
 }
+
+#endif //MAIN_CPP_42860_H
