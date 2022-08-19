@@ -1,6 +1,6 @@
 #include <iostream>
-#include "programmers/lv2/1844.h"
+#include <string>
+#include <cmath>
 
 int main() {
-    return solution({{1,0,1,1,1},{1,0,1,0,1},{1,0,1,1,1},{1,1,1,0,0},{0,0,0,0,1}});
 }
