@@ -5,6 +5,7 @@
 #ifndef MAIN_CPP_MYSET_H
 #define MAIN_CPP_MYSET_H
 
+// black - red tree 로 변경해야함..
 namespace SET {
     template<typename T>
     struct Node {

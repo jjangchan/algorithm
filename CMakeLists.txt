@@ -12,7 +12,7 @@ set(SRC
         example/2020.05.14_2.1.4.h
         example/2020.05.14_2.1.5.h
         example/cuk2.h
-        )
+        example/bank.h)
 
 set(BAEKJOON
         baekjoon/1753.h
@@ -48,7 +48,9 @@ set(PROGRAMMERS
         programmers/lv2/1835.h programmers/lv2/60058.h programmers/lv2/17677.h programmers/lv2/81302.h programmers/lv2/67257.h
         programmers/lv2/2021kakao_72412.h programmers/lv2/64065.h programmers/lv2/86052.h programmers/lv2/42577.h programmers/lv2/42746.h
         programmers/lv2/12909.h programmers/lv2/42839.h programmers/lv2/42860.h programmers/lv2/1844.h programmers/lv1/118666.h
-        programmers/lv2/70129.h programmers/lv2/12985.h programmers/lv2/76502.h programmers/lv2/17683.h programmers/lv2/1188667.h programmers/lv2/42890.h programmers/lv2/12978.h)
+        programmers/lv2/70129.h programmers/lv2/12985.h programmers/lv2/76502.h programmers/lv2/17683.h programmers/lv2/1188667.h
+        programmers/lv2/42890.h programmers/lv2/12978.h programmers/lv1/178871.h programmers/lv1/161990.h programmers/lv1/133502.h
+        programmers/lv1/172928.h programmers/lv1/kakao_150370.h programmers/lv1/160586.h)
 
 set(DataStructure
         datastructure/binarySearch.h
@@ -58,6 +60,6 @@ set(DataStructure
         datastructure/MyQueue.h
         datastructure/MySort.h
         datastructure/MyHashMap.h
-        datastructure/MyVector.h datastructure/MySet.h)
+        datastructure/MyVector.h datastructure/MySet.h )
 
 add_executable(${PROJECT_NAME} main.cpp ${SRC} ${BAEKJOON} ${PROGRAMMERS} ${DataStructure})

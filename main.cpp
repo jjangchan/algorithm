@@ -1,7 +1,8 @@
-#include "programmers/lv2/12978.h"
+#include <iostream>
+#include <vector>
+#include "programmers/lv1/160586.h"
 
-using namespace std;
 
 int main(){
-    return solution(6, {{1,2,1},{1,3,2},{2,3,2},{3,4,3},{3,5,2},{3,5,3},{5,6,1}},4);
+    solution({"ABACD", "BCEFD"}, {"ABCD","AABB"});
 }
