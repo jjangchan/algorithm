@@ -1,8 +1,9 @@
 #include <iostream>
-#include <vector>
-#include "programmers/lv1/160586.h"
+#include <queue>
+#include "programmers/lv2/1778870.h"
 
 
 int main(){
-    solution({"ABACD", "BCEFD"}, {"ABCD","AABB"});
+    solution({5,1,1,1,2,3,4,5,5}, 5);
+    return 0;
 }
