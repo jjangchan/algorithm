@@ -1,9 +1,9 @@
 #include <iostream>
 #include <queue>
-#include "programmers/lv2/1778870.h"
+#include "programmers/lv2/172927.h"
 
 
 int main(){
-    solution({5,1,1,1,2,3,4,5,5}, 5);
+    solution({0, 1, 1}, {"diamond", "diamond", "diamond", "diamond", "diamond", "iron", "iron", "iron", "iron", "iron", "diamond"});
     return 0;
 }
