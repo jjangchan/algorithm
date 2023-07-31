@@ -1,9 +1,8 @@
 #include <iostream>
-#include "programmers/lv2/169199.h"
+#include "programmers/lv2/159993.h"
 
 
 int main(){
-    solution({"...D..R", ".D.G...", "....D.D", "D....D.", "..D...."});
-
+    solution({"SOEOL","XXXXO","OOOOO","OXXXX","OOOOO"});
     return 0;
 }

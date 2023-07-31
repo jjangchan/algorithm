@@ -61,7 +61,7 @@ int solution(vector<int> picks, vector<string> minerals) {
  *     따라서, min(총 곡괭이, [총 광물/5]에 올림) 으로 사용할 수 있는 곡괭이 수를 구한다.
  * (2) 재귀로 DFS를 구현해서 사용할 수 있는 곡괭이 수 만큼 곡괭이(다이아몬드, 철, 돌)를 사용하는 모든 경우의 수를 구하면서 피로도에 최솟값을 구한다.
  *
- * [간결한 코드 풀이]
+ * [람다식 코드 풀이]
  *
  * unordered_map<string, int> dic[3] = {
     { { "diamond", 1 }, { "iron", 1 }, { "stone", 1 } },
