@@ -1,8 +1,8 @@
 #include <iostream>
-#include "programmers/lv2/159993.h"
+#include "programmers/lv2/150369.h"
 
 
 int main(){
-    solution({"SOEOL","XXXXO","OOOOO","OXXXX","OOOOO"});
+    solution(2, 7, {1,0,2,0,1,0,2}, {0,2,0,1,0,2,0});
     return 0;
 }
