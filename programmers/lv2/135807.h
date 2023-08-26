@@ -13,7 +13,6 @@
 using namespace std;
 
 int solution(vector<int> arrayA, vector<int> arrayB) {
-    int answer = 0;
     auto GCD = [&](const std::vector<int>& v)->int{
         int a = v[0];
         for(int i = 1; i < v.size(); i++){
@@ -45,8 +44,17 @@ int solution(vector<int> arrayA, vector<int> arrayB) {
         v.pop_back();
         return v;
     };
-
-    return answer;
+    const std::vector<int>& cd_a = CD(A), &cd_b = CD(B);
+    auto chk_max = [&](const std::vector<int>& cd, const std::vector<int>& array)-> int{
+        int result = 0;
+        for(int num : cd){
+            int i;
+            for(i = 0; i < array.size(); i++) if(array[i]%num == 0) break;
+            if(i == array.size()) return num;
+        }
+        return result;
+    };
+    return std::max(chk_max(cd_a, arrayB), chk_max(cd_b, arrayA));
 }
 
 #endif //MAIN_CPP_135807_H
