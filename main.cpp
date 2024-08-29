@@ -1,7 +1,7 @@
 #include <iostream>
 #include <queue>
-#include "programmers/lv2/42883.h"
+#include "programmers/lv2/17687.h"
 
 int main() {
-    solution("4177252841", 4);
+    solution(16, 16, 2, 2);
 }
