@@ -12,7 +12,7 @@ set(SRC
         example/2020.05.14_2.1.4.h
         example/2020.05.14_2.1.5.h
         example/cuk2.h
-        example/bank.h)
+        example/bank.h example/2023.12.17.h example/2023.12.18.h example/2023.12.20.h example/2023.12.21.h example/2023.12.22.h example/2023.12.23.h example/2023.12.24.h)
 
 set(BAEKJOON
         baekjoon/1753.h
@@ -55,7 +55,12 @@ set(PROGRAMMERS
         programmers/lv2/160585.h programmers/lv2/159993.h programmers/lv2/155651.h programmers/lv2/154540.h programmers/lv2/154539.h
         programmers/lv2/154538.h programmers/lv2/152996.h programmers/lv2/150369.h programmers/lv2/150368.h programmers/lv2/148653.h
         programmers/lv2/148652.h programmers/lv2/147354.h programmers/lv2/142085.h programmers/lv2/140107.h programmers/lv2/138476.h
-        programmers/lv2/135807.h programmers/lv2/134239.h programmers/lv2/132265.h programmers/lv2/131704.h programmers/lv2/131701.h programmers/lv2/131130.h programmers/lv2/131127.h programmers/lv2/92342.h programmers/lv2/92341.h programmers/lv2/92335.h programmers/lv2/87946.h programmers/lv2/87390.h)
+        programmers/lv2/135807.h programmers/lv2/134239.h programmers/lv2/132265.h programmers/lv2/131704.h programmers/lv2/131701.h
+        programmers/lv2/131130.h programmers/lv2/131127.h programmers/lv2/92342.h programmers/lv2/92341.h programmers/lv2/92335.h
+        programmers/lv2/87946.h programmers/lv2/87390.h programmers/lv2/86971.h programmers/lv1/250137.h programmers/lv1/250125.h
+        programmers/lv1/250121.h programmers/lv2/250136.h programmers/lv2/250135.h programmers/lv2/87377.h programmers/lv1/258712.h
+        programmers/lv2/258711.h programmers/lv2/84512.h programmers/lv2/77885.h programmers/lv2/68936.h programmers/lv2/68645.h
+        programmers/lv2/49994.h programmers/lv2/49993.h programmers/lv2/42885.h programmers/lv2/42883.h)
 
 set(DataStructure
         datastructure/binarySearch.h

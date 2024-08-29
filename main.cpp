@@ -1,9 +1,7 @@
 #include <iostream>
-#include <vector>
-#include "programmers/lv2/87946.h"
+#include <queue>
+#include "programmers/lv2/42883.h"
 
-
-int main(){
-    solution(80, {{100,20},{100,40},{80,10}});
-    return 0;
+int main() {
+    solution("4177252841", 4);
 }
