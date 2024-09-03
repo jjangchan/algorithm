@@ -1,7 +1,7 @@
 #include <iostream>
-#include <queue>
-#include "programmers/lv2/17687.h"
+#include <unordered_map>
+#include "programmers/lv3/150363.h"
 
 int main() {
-    solution(16, 16, 2, 2);
+    solution(3,3,1,2,3,3,4);
 }

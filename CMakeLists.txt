@@ -60,7 +60,8 @@ set(PROGRAMMERS
         programmers/lv2/87946.h programmers/lv2/87390.h programmers/lv2/86971.h programmers/lv1/250137.h programmers/lv1/250125.h
         programmers/lv1/250121.h programmers/lv2/250136.h programmers/lv2/250135.h programmers/lv2/87377.h programmers/lv1/258712.h
         programmers/lv2/258711.h programmers/lv2/84512.h programmers/lv2/77885.h programmers/lv2/68936.h programmers/lv2/68645.h
-        programmers/lv2/49994.h programmers/lv2/49993.h programmers/lv2/42885.h programmers/lv2/42883.h programmers/lv2/17680.h programmers/lv2/17687.h)
+        programmers/lv2/49994.h programmers/lv2/49993.h programmers/lv2/42885.h programmers/lv2/42883.h programmers/lv2/17680.h
+        programmers/lv2/17687.h programmers/lv2/17679.h programmers/lv2/17686.h programmers/lv2/17684.h programmers/lv3/43163.h programmers/lv3/150363.h)
 
 set(DataStructure
         datastructure/binarySearch.h
